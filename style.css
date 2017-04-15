@@ -76,6 +76,7 @@ Version: 1.0
   24.6 Sidebar Recent recipes Area Styles
 25. Footer Area Styles
 26. Switch Styling Area Styles
+27. Modal styles
 
 --------------------------------------------*/
 /*=====================================
@@ -1638,6 +1639,7 @@ ul {
 }
 .mean-container .mean-bar {
   float: none;
+  z-index: 900;
 }
 @media only screen and (max-width: 767px) {
   .mean-container .mean-bar a {
@@ -2239,6 +2241,150 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /*.tasty-menu-inner {
+    padding: 70px 40px 0 40px;
+    background: @textPrimaryColor;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    border-right: 10px solid @darkPrimaryColor;
+    border-bottom: 10px solid @darkPrimaryColor;
+    border-left: 10px solid @darkPrimaryColor; 
+    @media (min-width : 768px) and (max-width : 991px) {
+      padding: 70px 15px 0 15px;
+    }
+    @media only screen and (max-width : 767px) {
+      padding: 70px 30px 0 30px; 
+    }
+    @media only screen and (max-width : 479px) {
+      text-align: center; 
+    }
+    > div:last-child {
+      padding-left: 40px;
+      @media (min-width : 768px) and (max-width : 991px) {
+        padding-left: 20px;
+      }
+      @media only screen and (max-width : 767px) {
+        padding-left: 15px;
+      }
+      &:after {
+        content: url("img/food-menu-bottom-right2.png");
+        right: -40px;
+        bottom: -9px;
+        position: absolute;        
+      }  
+    }
+    &:before {
+      border: 10px solid transparent;
+      -webkit-border-image: url(img/border.png) 10 round; 
+      -o-border-image: url(img/border.png) 10 round; 
+      border-image: url(img/border.png) 10 round;
+      background: transparent;
+      content: "";
+      position: absolute;
+      height: 96%;
+      width: 97%;
+      top: 20px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: 1;
+      @media (min-width : 768px) and (max-width : 991px) {
+        border: 5px solid #f8f8f8;
+      }
+      @media only screen and (max-width : 480px) {
+        height: 99%;
+      }
+    }
+    &:after {
+      border-left: 10px solid transparent;
+      -moz-border-image: url(img/border.png) 10 round;
+      -webkit-border-image: url(img/border.png) 10 round;
+      -o-border-image: url(img/border.png) 10 round;
+      border-image: url(img/border.png) 10 fill round;
+      background: transparent;
+      content: "";
+      position: absolute;
+      height: 94%;
+      width: 97%;
+      top: 28px;
+      left: 50%;
+      z-index: 1;
+      @media (min-width : 768px) and (max-width : 991px) {
+        width: 5px;
+        border-left: none;
+        background: #f8f8f8;
+        height: 96%;
+        top: 20px;
+        border-image: none;
+      }
+      @media only screen and (max-width : 767px) {
+        display: none;
+      }
+    }
+    ul {
+      padding: 50px 10px;
+      @media only screen and (max-width : 480px) {
+        padding: 30px 0;
+      }
+      @media (min-width : 768px) and (max-width : 991px) {
+        padding: 30px 0;
+      }
+      li {
+        margin-bottom: 17px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .media {
+          @media only screen and (max-width : 480px) {
+            text-align: center;
+            position: relative;
+          }
+          a {
+            @media only screen and (max-width : 480px) {
+              float: inherit!important;
+            }
+            img {
+              @media only screen and (max-width : 480px) {
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+        .media-body {
+          padding: 10px;
+          position: relative;
+          @media only screen and (max-width : 480px) {
+           position: initial;
+          }
+          h4 {
+            font-size: 18px;
+            border-bottom: 1px dashed #707070;
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+            a {
+              color: @primaryTextColor;
+            }
+          }
+          p {
+            color: #707070;
+            font-size: 15px;
+          }
+          span {
+            color: @primaryColor;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 24px;
+            @media only screen and (max-width : 480px) {
+              right: 0;
+              top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }*/
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .tasty-menu-area {
@@ -2269,175 +2415,9 @@ ul {
   width: 100%;
   z-index: -1;
 }
-.tasty-menu-area .tasty-menu-inner {
-  padding: 70px 40px 0 40px;
-  background: #FFFFFF;
-  position: relative;
-  z-index: 2;
-  display: inline-block;
-  border-right: 10px solid #D32F2F;
-  border-bottom: 10px solid #D32F2F;
-  border-left: 10px solid #D32F2F;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .tasty-menu-area .tasty-menu-inner {
-    padding: 70px 15px 0 15px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .tasty-menu-area .tasty-menu-inner {
-    padding: 70px 30px 0 30px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  .tasty-menu-area .tasty-menu-inner {
-    text-align: center;
-  }
-}
-.tasty-menu-area .tasty-menu-inner > div:last-child {
-  padding-left: 40px;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .tasty-menu-area .tasty-menu-inner > div:last-child {
-    padding-left: 20px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .tasty-menu-area .tasty-menu-inner > div:last-child {
-    padding-left: 15px;
-  }
-}
-.tasty-menu-area .tasty-menu-inner > div:last-child:after {
-  content: url("img/food-menu-bottom-right2.png");
-  right: -40px;
-  bottom: -9px;
-  position: absolute;
-}
-.tasty-menu-area .tasty-menu-inner:before {
-  border: 10px solid transparent;
-  -webkit-border-image: url(img/border.png) 10 round;
-  -o-border-image: url(img/border.png) 10 round;
-  border-image: url(img/border.png) 10 round;
-  background: transparent;
-  content: "";
-  position: absolute;
-  height: 96%;
-  width: 97%;
-  top: 20px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  z-index: 1;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .tasty-menu-area .tasty-menu-inner:before {
-    border: 5px solid #f8f8f8;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .tasty-menu-area .tasty-menu-inner:before {
-    height: 99%;
-  }
-}
-.tasty-menu-area .tasty-menu-inner:after {
-  border-left: 10px solid transparent;
-  -moz-border-image: url(img/border.png) 10 round;
-  -webkit-border-image: url(img/border.png) 10 round;
-  -o-border-image: url(img/border.png) 10 round;
-  border-image: url(img/border.png) 10 fill round;
-  background: transparent;
-  content: "";
-  position: absolute;
-  height: 94%;
-  width: 97%;
-  top: 28px;
-  left: 50%;
-  z-index: 1;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .tasty-menu-area .tasty-menu-inner:after {
-    width: 5px;
-    border-left: none;
-    background: #f8f8f8;
-    height: 96%;
-    top: 20px;
-    border-image: none;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .tasty-menu-area .tasty-menu-inner:after {
-    display: none;
-  }
-}
-.tasty-menu-area .tasty-menu-inner ul {
-  padding: 50px 10px;
-}
-@media only screen and (max-width: 480px) {
-  .tasty-menu-area .tasty-menu-inner ul {
-    padding: 30px 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .tasty-menu-area .tasty-menu-inner ul {
-    padding: 30px 0;
-  }
-}
-.tasty-menu-area .tasty-menu-inner ul li {
-  margin-bottom: 17px;
-}
-.tasty-menu-area .tasty-menu-inner ul li:last-child {
-  margin-bottom: 0;
-}
-@media only screen and (max-width: 480px) {
-  .tasty-menu-area .tasty-menu-inner ul li .media {
-    text-align: center;
-    position: relative;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .tasty-menu-area .tasty-menu-inner ul li .media a {
-    float: inherit!important;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .tasty-menu-area .tasty-menu-inner ul li .media a img {
-    margin: 0 auto;
-  }
-}
-.tasty-menu-area .tasty-menu-inner ul li .media-body {
-  padding: 10px;
-  position: relative;
-}
-@media only screen and (max-width: 480px) {
-  .tasty-menu-area .tasty-menu-inner ul li .media-body {
-    position: initial;
-  }
-}
-.tasty-menu-area .tasty-menu-inner ul li .media-body h4 {
-  font-size: 18px;
-  border-bottom: 1px dashed #707070;
-  padding-bottom: 15px;
-  margin-bottom: 10px;
-}
-.tasty-menu-area .tasty-menu-inner ul li .media-body h4 a {
-  color: #222222;
-}
-.tasty-menu-area .tasty-menu-inner ul li .media-body p {
-  color: #707070;
-  font-size: 15px;
-}
-.tasty-menu-area .tasty-menu-inner ul li .media-body span {
-  color: #e7272d;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 24px;
-}
-@media only screen and (max-width: 480px) {
-  .tasty-menu-area .tasty-menu-inner ul li .media-body span {
-    right: 0;
-    top: 20px;
-  }
+.tasty-menu-area p {
+  text-align: center;
+  color: #FFFFFF;
 }
 /*=====================================
 7. Recipe Of The Day Area Styles
@@ -5528,7 +5508,7 @@ ul {
 .special-dish-area .special-dish-box a img {
   display: inherit;
   margin-bottom: 25px;
-  width: auto;
+  width: 170px;
 }
 .special-dish-area .owl-controls {
   text-align: center;
@@ -6732,4 +6712,10 @@ ul {
   right: -45px;
   background-color: #e7272d;
   color: #FFFFFF;
+}
+/*======================================
+26. Modal Styles 
+========================================*/
+.modal {
+  top: 5%;
 }

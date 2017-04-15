@@ -99,6 +99,7 @@ Version: 1.0
   24.6 Sidebar Recent recipes Area Styles
 25. Footer Area Styles
 26. Switch Styling Area Styles
+27. Modal styles
 
 --------------------------------------------*/
 
@@ -1485,6 +1486,7 @@ header {
 }
 .mean-container .mean-bar{
   float: none;
+  z-index: 900;
   a {
     @media only screen and (max-width : 767px) {
      padding: 6px 16px;
@@ -2041,7 +2043,11 @@ header {
     width: 100%;
     z-index: -1;
   }   
-  .tasty-menu-inner {
+  p{
+    text-align: center;
+    color: @textPrimaryColor;
+  }
+  /*.tasty-menu-inner {
     padding: 70px 40px 0 40px;
     background: @textPrimaryColor;
     position: relative;
@@ -2184,7 +2190,7 @@ header {
         }
       }
     }
-  }
+  }*/
 }
 /*=====================================
 7. Recipe Of The Day Area Styles
@@ -4902,7 +4908,7 @@ header {
     a img {
       display: inherit;
       margin-bottom: 25px;
-      width: auto;
+      width: 170px;
     }
   }
   .owl-controls {
@@ -5929,4 +5935,10 @@ header {
     background-color: @primaryColor;   
     color: @textPrimaryColor;  
   }
+}
+/*======================================
+26. Modal Styles 
+========================================*/
+.modal{
+  top: 5%;
 }

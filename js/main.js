@@ -96,15 +96,16 @@
         if ($container.length > 0) {
 
             // Isotope initialization
-            var $isotope = $container.find('.featuredContainer').isotope({
-                filter: '*',
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: false
+
+
+            var $isotope = $container.find('.featuredContainer');
+            $isotope.isotope({
+                itemSelector: '.element-item',
+                layoutMode: 'fitRows',
+                getSortData: {
+                    name: '.name'
                 }
             });
-
             // Isotope filter
             $container.find('.isotop-classes-tab').on('click', 'a', function () {
 
@@ -120,6 +121,7 @@
                         queue: false
                     }
                 });
+                $isotope.isotope({ sortBy: 'name' });
                 return false;
 
             });

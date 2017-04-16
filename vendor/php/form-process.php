@@ -1,8 +1,5 @@
 <?php
 
-$EmailTo = "info@radiustheme.com";
-$Subject = "New Message Received";
-
 $errorMSG = "";
 $name = $email = $message = $subject= null;
 
@@ -38,28 +35,16 @@ if (empty($_POST["message"])) {
 
 }
 
-// prepare email body text
-$Body = null;
-$Body .= "<p><b>Name:</b> {$name}</p>";
-$Body .= "<p><b>Email:</b> {$email}</p>";
-$Body .= "<p><b>Subject:</b> {$subject}</p>";
-$Body .= "<p><b>Message:</b> </p><p>{$message}</p>";
+require('fpdf.php');
 
- 
+$pdf = new FPDF();
+$pdf->AddPage();
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(40,10,$email);
+$pdf->Output();
 
-// send email
-$headers = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-$headers .= 'From:  ' . $name . ' <' . $email .'>' . " \r\n" .
-            'Reply-To: '.  $fromEmail . "\r\n" .
-            'X-Mailer: PHP/' . phpversion();
 
-if($name && $email && $message){
-    $success = mail($EmailTo, $Subject, $Body, $headers );
-}else{
-    $success = false;
-}
-
+$success=true;
 
 if ($success && $errorMSG == ""){
    echo "success";

@@ -1055,7 +1055,7 @@ ul {
   text-align: center;
 }
 .main-menu-area nav ul .active > a {
-  color: #e7272d !important;
+  border-bottom: solid 2px #FFFFFF;
 }
 .main-menu-area nav ul li {
   display: inline-block;
@@ -1441,69 +1441,10 @@ ul {
 2.3 Header 2 Area Styles 
 ---------------------------------------*/
 .header2-area {
-  /*.header-top-area {
-    padding: 4px 0;
-    background: transparent;
-    border-bottom: 1px solid #dedede;  
-    .header-top-left {  
-       ul {
-        li {
-          display: inline-block; 
-          text-transform: lowercase;
-          font-weight: 500;
-          font-size: 13px;
-          border-right: 1px solid @dividerColor;
-          margin-right: 15px;
-          padding-right: 15px;
-          i {
-            padding-right: 5px;
-            color: @primaryColor;
-            font-size: 14px;
-          }
-          a {
-            color: @bodyColor;
-            .transition(all, 0.3s, ease-out);
-          }
-          &:last-child {
-            border-right: 0;
-            padding-right: 0;
-            margin-right: 0;
-          }
-          &:hover {
-            a {
-              color: @primaryColor;
-              .transition(all, 0.3s, ease-out);
-            }
-          }
-        }
-      }
-    }
-    .header-top-right {
-      text-align: right;
-      ul {
-        li {
-          display: inline;
-          margin-left: 15px;
-          a {
-            i {
-              color: @primaryColor;
-              .transition(all, 0.3s, ease-out);
-            }
-            &:hover {
-              i {
-                color: @primaryTextColor;
-                .transition(all, 0.3s, ease-out);
-              }
-            }
-          }
-        }
-      }
-    }
-  }*/
+  background: #e7272d;
 }
 .header2-area .header-bottom-area {
-  padding: 20px 0 0 0;
-  border-bottom: 2px solid #e7272d;
+  padding: 0;
   /*.mega-menu-area {
       > li {
         &:hover {
@@ -1518,7 +1459,14 @@ ul {
       }
     }*/
 }
+.header2-area .header-bottom-area img {
+  padding-top: 23px;
+}
+.header2-area .header-bottom-area nav ul {
+  margin: 0;
+}
 .header2-area .header-bottom-area nav ul li {
+  padding: 27px 15px 23px;
   /*ul {
             li {
               a {
@@ -1531,17 +1479,18 @@ ul {
           }*/
 }
 .header2-area .header-bottom-area nav ul li a {
-  color: #222222;
+  padding: 0 0 4px 0;
+  color: #FFFFFF;
 }
 .header2-area .header-bottom-area nav ul li a:hover {
-  color: #e7272d;
+  color: #FFFFFF;
 }
 .header2-area .header-bottom-area .col-sm-8 {
   padding-left: 0!important;
   padding-right: 0!important;
 }
 .header2-area .stick {
-  background: rgba(255, 255, 255, 0.9);
+  background: #e7272d;
   position: fixed;
 }
 /*-------------------------------------

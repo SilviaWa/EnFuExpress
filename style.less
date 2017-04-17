@@ -905,7 +905,7 @@ header {
       margin-top: 7px;
       text-align: center;
        .active > a {
-        color: @primaryColor!important;
+        border-bottom: solid 2px @textPrimaryColor;
       }
       li {
         display: inline-block;
@@ -1283,75 +1283,23 @@ header {
 2.3 Header 2 Area Styles 
 ---------------------------------------*/
 .header2-area {
-  /*.header-top-area {
-    padding: 4px 0;
-    background: transparent;
-    border-bottom: 1px solid #dedede;  
-    .header-top-left {  
-       ul {
-        li {
-          display: inline-block; 
-          text-transform: lowercase;
-          font-weight: 500;
-          font-size: 13px;
-          border-right: 1px solid @dividerColor;
-          margin-right: 15px;
-          padding-right: 15px;
-          i {
-            padding-right: 5px;
-            color: @primaryColor;
-            font-size: 14px;
-          }
-          a {
-            color: @bodyColor;
-            .transition(all, 0.3s, ease-out);
-          }
-          &:last-child {
-            border-right: 0;
-            padding-right: 0;
-            margin-right: 0;
-          }
-          &:hover {
-            a {
-              color: @primaryColor;
-              .transition(all, 0.3s, ease-out);
-            }
-          }
-        }
-      }
-    }
-    .header-top-right {
-      text-align: right;
-      ul {
-        li {
-          display: inline;
-          margin-left: 15px;
-          a {
-            i {
-              color: @primaryColor;
-              .transition(all, 0.3s, ease-out);
-            }
-            &:hover {
-              i {
-                color: @primaryTextColor;
-                .transition(all, 0.3s, ease-out);
-              }
-            }
-          }
-        }
-      }
-    }
-  }*/
+  background: @primaryColor;
   .header-bottom-area {   
-    padding: 20px 0 0 0;
-    border-bottom: 2px solid @primaryColor;
+    padding: 0;
+    //border-bottom: 2px solid @primaryColor;
+    img{
+      padding-top: 23px;
+    }
     nav {
       ul {
+        margin: 0;
          li {
+          padding: 27px 15px 23px;
           a {
-            color: @primaryTextColor;
+            padding: 0 0 4px 0;
+            color: @textPrimaryColor;
             &:hover {
-              color: @primaryColor;
+              color: @textPrimaryColor;
             }
           }
           /*ul {
@@ -1386,7 +1334,7 @@ header {
     } 
   }
   .stick {
-    .rgbaColorIn(@textPrimaryColor, 90%);
+    .rgbaColorIn(@primaryColor, 100%);
     background:  @result;
     position: fixed;
   }

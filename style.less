@@ -4051,7 +4051,7 @@ header {
           transform: translateY(-50%);
           left: 0;
           right: 0;
-          top: 30%;
+          top: 15%;
           z-index: 2;
           margin: 0 auto;
           opacity: 0;
@@ -4061,11 +4061,17 @@ header {
           -ms-transform: scale(1) translateY(300px);
           transform: scale(1) translateY(300px);
           .transition(all, 0.8s, ease-out);
+
           li {
-            border-radius: 50%;
-            height: 50px;
-            width: 50px;
-            line-height: 52px;
+            &:first-child{
+            font-size: 1.14em;
+            padding: 2% 0;
+            margin: 0 2% 2% 2%;
+            border-bottom: 1px solid @textPrimaryColor;
+            border-top: 1px solid @textPrimaryColor;
+           }
+            line-height: 1.5em;
+            color: @textPrimaryColor;
             margin: 0 auto;
             .transition(all, 0.5s, ease-out);
             a {
@@ -4075,10 +4081,6 @@ header {
                 font-size: 18px;
                 color: @textPrimaryColor;
               }
-            }
-            &:hover {
-              background: @primaryColor;
-              .transition(all, 0.5s, ease-out);
             }
           }
         }

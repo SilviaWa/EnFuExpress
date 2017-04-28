@@ -4527,7 +4527,7 @@ ul {
   transform: translateY(-50%);
   left: 0;
   right: 0;
-  top: 30%;
+  top: 15%;
   z-index: 2;
   margin: 0 auto;
   opacity: 0;
@@ -4543,16 +4543,21 @@ ul {
   transition: all 0.8s ease-out;
 }
 .food-menu2-area .food-menu2-box .food-menu2-img-holder .food-menu2-more-holder ul li {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  line-height: 52px;
+  line-height: 1.5em;
+  color: #FFFFFF;
   margin: 0 auto;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+}
+.food-menu2-area .food-menu2-box .food-menu2-img-holder .food-menu2-more-holder ul li:first-child {
+  font-size: 1.14em;
+  padding: 2% 0;
+  margin: 0 2% 2% 2%;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
 }
 .food-menu2-area .food-menu2-box .food-menu2-img-holder .food-menu2-more-holder ul li a {
   padding: 15px;
@@ -4561,14 +4566,6 @@ ul {
 .food-menu2-area .food-menu2-box .food-menu2-img-holder .food-menu2-more-holder ul li a i {
   font-size: 18px;
   color: #FFFFFF;
-}
-.food-menu2-area .food-menu2-box .food-menu2-img-holder .food-menu2-more-holder ul li:hover {
-  background: #e7272d;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
 }
 .food-menu2-area .food-menu2-box .food-menu2-title-holder {
   padding: 20px 0 5px;

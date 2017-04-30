@@ -6263,6 +6263,13 @@ ul {
     padding-right: 0;
   }
 }
+.footer-area-top .left {
+  font-size: 18px;
+  color: #d7d7d7;
+}
+.footer-area-top .left h4 {
+  display: inline-block;
+}
 .footer-area-top h3 {
   font-size: 26px;
   margin-bottom: 55px;

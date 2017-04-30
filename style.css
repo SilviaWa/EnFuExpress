@@ -896,7 +896,7 @@ ul {
 1.6 Preloader Area Styles
 ---------------------------------------*/
 #preloader {
-  background: #ffffff url('img/preloader.gif') no-repeat scroll center center;
+  background: #ffffff no-repeat scroll center center;
   height: 100%;
   left: 0;
   overflow: visible;
@@ -2189,7 +2189,7 @@ ul {
 .tasty-menu-area {
   padding: 85px 0 90px;
   position: relative;
-  background: url(img/tasty-menu-back.png);
+  background: url(img/tasty-menu-back.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4590,22 +4590,7 @@ ul {
 }
 .food-menu2-area .food-menu2-box .food-menu2-title-holder h3 {
   font-size: 18px;
-}
-.food-menu2-area .food-menu2-box .food-menu2-title-holder h3 a {
-  color: #222222;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.food-menu2-area .food-menu2-box .food-menu2-title-holder h3 a:hover {
   color: #e7272d;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
 }
 .food-menu2-area .food-menu2-box:hover .food-menu2-more-holder ul {
   opacity: 1;

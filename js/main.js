@@ -102,9 +102,9 @@
             $isotope.isotope({
                 itemSelector: '.element-item',
                 layoutMode: 'fitRows',
-                getSortData: {
+                /*getSortData: {
                     name: '.name'
-                }
+                }*/
             });
             // Isotope filter
             $container.find('.isotop-classes-tab').on('click', 'a', function () {
@@ -121,7 +121,7 @@
                         queue: false
                     }
                 });
-                $isotope.isotope({ sortBy: 'name' });
+                /*$isotope.isotope({ sortBy: 'name' });*/
                 return false;
 
             });

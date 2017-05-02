@@ -1,6 +1,6 @@
 <?php
 
-$EmailTo = "info@radiustheme.com";
+$EmailTo = "enfuexpress@gmail.com";
 $Subject = "New Message Received-Enfu Express Website";
 
 $errorMSG = "";
@@ -51,7 +51,7 @@ $Body .= "<p><b>Message:</b> </p><p>{$message}</p>";
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $headers .= 'From:  ' . $name . ' <' . $email .'>' . " \r\n" .
-            'Reply-To: '.  $fromEmail . "\r\n" .
+            'Reply-To: '.  $email . "\r\n" .
             'X-Mailer: PHP/' . phpversion();
 
 if($name && $email && $message){

@@ -1435,6 +1435,7 @@ header {
 .mean-container .mean-bar{
   float: none;
   z-index: 900;
+  border-bottom: 2px solid @primaryColor;
   a {
     @media only screen and (max-width : 767px) {
      padding: 6px 16px;
@@ -5138,15 +5139,6 @@ header {
 23. Contact Us Page Area Styles 
 ========================================*/
 .contact-us-page-area {
-  .google-map-area {
-    margin-bottom: 80px;
-    @media only screen and (max-width : 767px) {
-     margin-bottom: 50px;
-    }
-    @media only screen and (max-width : 480px) {
-     margin-bottom: 30px;
-    }
-  }   
   .contact-us-left {
     @media only screen and (max-width : 767px) {
      margin-bottom: 30px;
@@ -5244,6 +5236,12 @@ header {
           }
         }
       }
+    }
+  }
+  .career-message{
+    color: black;
+    a{
+      color: @primaryColor;
     }
   }
   .contact-us-right {

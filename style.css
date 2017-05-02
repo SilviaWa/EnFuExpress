@@ -1589,6 +1589,7 @@ ul {
 .mean-container .mean-bar {
   float: none;
   z-index: 900;
+  border-bottom: 2px solid #e7272d;
 }
 @media only screen and (max-width: 767px) {
   .mean-container .mean-bar a {
@@ -5771,19 +5772,6 @@ ul {
 /*======================================
 23. Contact Us Page Area Styles 
 ========================================*/
-.contact-us-page-area .google-map-area {
-  margin-bottom: 80px;
-}
-@media only screen and (max-width: 767px) {
-  .contact-us-page-area .google-map-area {
-    margin-bottom: 50px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .contact-us-page-area .google-map-area {
-    margin-bottom: 30px;
-  }
-}
 @media only screen and (max-width: 767px) {
   .contact-us-page-area .contact-us-left {
     margin-bottom: 30px;
@@ -5910,6 +5898,12 @@ ul {
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+}
+.contact-us-page-area .career-message {
+  color: black;
+}
+.contact-us-page-area .career-message a {
+  color: #e7272d;
 }
 .contact-us-page-area .contact-us-right h2 {
   margin-bottom: 45px;

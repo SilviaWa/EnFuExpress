@@ -5240,6 +5240,9 @@ ul {
   margin-bottom: 25px;
   width: 170px;
 }
+.special-dish-area .special-dish-box h3 {
+  color: #222222;
+}
 .special-dish-area .owl-controls {
   text-align: center;
   margin-top: 30px;

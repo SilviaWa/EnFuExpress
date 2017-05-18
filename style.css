@@ -1667,7 +1667,7 @@ ul {
 =======================================*/
 .welcome-area {
   position: relative;
-  background: url(img/test.jpg);
+  background: url(img/welcome.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
